@@ -1,0 +1,5 @@
+*.exe
+*.o
+*.obj
+source2html
+.vscode/

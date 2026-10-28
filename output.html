@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>C Source to HTML - Nilesh Mahajan</title>
+<style>
+body {
+    background: #181818;
+    color: #e0e0e0;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 15px;
+    padding: 16px;
+}
+pre {
+    white-space: pre-wrap;
+    line-height: 1.4;
+}
+.lineno  { color: #6e7681; user-select: none; margin-right: 12px; }
+.preproc { color: #d19a66; font-weight: bold; }
+.header  { color: #98c379; }
+.comment { color: #7f848e; font-style: italic; }
+.data    { color: #e5c07b; font-weight: bold; }
+.ctrl    { color: #c678dd; font-weight: bold; }
+.num     { color: #61afef; }
+.str     { color: #98c379; }
+.ch      { color: #56b6c2; }
+</style>
+</head>
+<body>
+<pre>
+<span class="lineno">  1  </span><span class="comment">/*
+<span class="lineno">  2  </span> * Sample test program for C Source to HTML Converter
+<span class="lineno">  3  </span> * Author: Nilesh Mahajan
+<span class="lineno">  4  </span> */</span>
+<span class="lineno">  5  </span>
+<span class="lineno">  6  </span><span class="preproc">#include </span><span class="header">&lt;stdio.h&gt;</span>
+<span class="lineno">  7  </span><span class="preproc">#include </span><span class="header">&lt;string.h&gt;</span>
+<span class="lineno">  8  </span>
+<span class="lineno">  9  </span><span class="data">void</span> show_message(<span class="data">void</span>);
+<span class="lineno"> 10  </span>
+<span class="lineno"> 11  </span><span class="data">int</span> main(<span class="data">void</span>)
+<span class="lineno"> 12  </span>{
+<span class="lineno"> 13  </span>    <span class="comment">/* Variable declarations */</span>
+<span class="lineno"> 14  </span>    <span class="data">int</span> count = <span class="num">5</span>;
+<span class="lineno"> 15  </span>    <span class="data">float</span> pi = <span class="num">3.14159</span>f;
+<span class="lineno"> 16  </span>    <span class="data">char</span> ch = <span class="ch">'A'</span>;
+<span class="lineno"> 17  </span>    <span class="data">int</span> hex_val = <span class="num">0x2F</span>;
+<span class="lineno"> 18  </span>
+<span class="lineno"> 19  </span>    printf(<span class="str">"Hello from Source2HTML test!\n"</span>);
+<span class="lineno"> 20  </span>    printf(<span class="str">"Value: %d, Float: %f, Char: %c, Hex: 0x%X\n"</span>, count, pi, ch, hex_val);
+<span class="lineno"> 21  </span>
+<span class="lineno"> 22  </span>    <span class="comment">// Loop example</span>
+<span class="lineno"> 23  </span>    <span class="ctrl">for</span> (<span class="data">int</span> i = <span class="num">0</span>; i &lt; count; i++)
+<span class="lineno"> 24  </span>    {
+<span class="lineno"> 25  </span>        <span class="ctrl">if</span> (i % <span class="num">2</span> == <span class="num">0</span>)
+<span class="lineno"> 26  </span>        {
+<span class="lineno"> 27  </span>            printf(<span class="str">"Even index: %d\n"</span>, i);
+<span class="lineno"> 28  </span>        }
+<span class="lineno"> 29  </span>        <span class="ctrl">else</span>
+<span class="lineno"> 30  </span>        {
+<span class="lineno"> 31  </span>            printf(<span class="str">"Odd index: %d\n"</span>, i);
+<span class="lineno"> 32  </span>        }
+<span class="lineno"> 33  </span>    }
+<span class="lineno"> 34  </span>
+<span class="lineno"> 35  </span>    show_message();
+<span class="lineno"> 36  </span>    <span class="ctrl">return</span> <span class="num">0</span>;
+<span class="lineno"> 37  </span>}
+<span class="lineno"> 38  </span>
+<span class="lineno"> 39  </span><span class="data">void</span> show_message(<span class="data">void</span>)
+<span class="lineno"> 40  </span>{
+<span class="lineno"> 41  </span>    printf(<span class="str">"Demonstration complete.\n"</span>);
+<span class="lineno"> 42  </span>}
+<span class="lineno"> 43  </span></pre>
+</body>
+</html>
